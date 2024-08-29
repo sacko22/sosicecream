@@ -1,0 +1,422 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: Tahoma;
+   font-size: 19px;
+}
+*::selection{
+    background-color: #ff8c8c;
+}
+
+h1{
+    font-size: 120px;
+    text-align: center;
+    font-family: "Dancing Script";
+    margin-top: 50px;
+    line-height: 80px;
+    margin-bottom : 40px;
+}
+h2{
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 50px;
+}
+header{
+    background-color: #ff8c8c;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 80%;
+    margin: auto; 
+}
+
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: #c0ff8c;
+    font-weight: 500;
+}
+nav img {
+    width: 90px;
+}
+#btn_header img {
+    width: 40px;
+}
+.carousel-item{
+    height: 100vh;
+}
+.carousel-item p{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 4rem;
+    width: 100%;
+    padding: 0 20px;
+    font-weight: 600;
+}
+.carousel-item .bg1, .bg2, .bg3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+}
+.bg1{
+    background: url("Images/manger Glace amies.jpeg");
+}
+.bg2{
+    background: url("Images/OIP.jpeg");
+}
+.bg3{
+    background-image: url("Images/R.jpeg");
+}
+.carousel-item .texte{
+    font-family: Satisfy;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10%;
+    color: #c0ff8c;
+    font-size: 80px;
+}
+.introduction{
+    text-align: center;
+    height: auto;
+    padding: 100px 0;
+    background-color: white;
+    
+}
+.introduction h1{
+    font-family: falsafah;
+    font-size: 7rem;
+    margin: 20px 0;
+    line-height: normal;
+    padding: 0 3px;
+}
+.introduction h1 span{
+    color: #ff8c8c;
+}
+.introduction .bar{
+    height: 2px;
+    width: 30%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.766);
+    margin-bottom: 40px;
+}
+.titre .soulignement{
+    height: 3px;
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.titre .soulignement div{
+    height: 100%;
+    width: 100%;
+    background-color: #ff8c8c;
+    animation: barre 2s infinite alternate;
+    margin-bottom: 40px;
+}
+.introduction p{
+    font-size: 25px;
+}
+.menu{
+    padding: 40px 0;
+}
+.menu .parfum{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu .parfum .text{
+    padding: 0 10%;
+    padding-top: 80px;
+    border: 1px dotted black;
+    width: 50%;
+}
+.menu .parfum .text p {
+    font-size: 19px;
+}
+.menu .parfum .text span{
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 50px;
+}
+.menu .parfum img{
+    height: 500px;
+    width: 50%;
+    object-fit: cover;
+    padding: 0 0;
+}
+.menu button{
+    padding: 10px 19px;
+    margin: auto;
+    display: block;
+    background-color: #c0ff8c;
+    animation: buttonAnime 0.5s infinite alternate;
+    font-size: 18px;
+    font-weight: 400;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    
+}
+.menu button:hover{
+    background-color: #ff8c8c;
+    animation-play-state: paused;
+}
+
+
+.para{
+    height: 500px;
+    overflow: hidden;
+}
+.parallax{
+    background-image: url("Images/ice-cream-5928043_1280.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.gallerie .items{
+    display: flex;
+    flex-wrap:wrap;                                                                                     
+}
+.gallerie .item{
+    width: 50%;
+    overflow: hidden;
+}
+.gallerie .item img {
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    padding: 120px 20px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: start;
+    background: url("Images/9169033-arriere-plan-avec-differents-types-de-glaces-doodle-texture-avec-desserts-sucres-arriere-plan-parfait-pour-un-cafe-ou-un-menu-de-restaurant-vectoriel.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.footer .address,.nous_suivre,.contact{
+    margin-top: 50px;
+}
+.footer .address span{
+    font-weight: 500;
+    font-size: 16px;
+}
+.footer .nous_suivre .images img{
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+    transition: 0.3s scale;
+}
+.footer .nous_suivre .images img:hover{
+    scale: 1.5;
+}
+.footer h3{
+    margin-bottom: 20px;
+    font-family: Severange;
+}
+.footer .contact span{
+    display: block;
+}
+
+.introAnime{
+    animation: introAnime 5s alternate;
+}
+
+.recipient{
+    margin: 40px 0;
+}
+.recipient .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.recipient .item{
+    width: 40%;
+    border: 1px  dotted black;
+}
+.recipient .item img{
+    width: 100%;
+}
+.recipient .item .text{
+    text-align: center;
+    padding-bottom:15px ;
+}
+.recipient .item h3,#contact h3{
+    margin-bottom: 15px;
+}
+
+#contact .text p{
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+#contact .localisation{
+    text-align: center;
+    margin: 60px 0;
+}
+#contact .formulaire{
+    width: 70%;
+    margin: auto;
+}
+#contact .formulaire h3{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+#contact .formulaire button{
+    width: 100%;
+    background-color: #ff8c8c;
+    font-weight: 500;
+}
+#contact .formulaire button:hover{
+    background-color: #c0ff8c;
+}
+.presentation-dev{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.presentation-dev .img{
+    width: 100%;
+    margin: auto;
+}
+.presentation-dev .img img{
+    width: 500px;
+    height: auto;
+    border-radius: 100%;
+    margin-bottom: 30px;
+    border: 3px solid black;
+}
+.presentation-dev h3{
+    margin-bottom:18px ;
+    font-size: 33px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    row-gap: 15px;
+}
+
+@keyframes buttonAnime {
+    from{
+        rotate: 5deg;
+    }
+    to{
+        rotate: -5deg;
+    }
+}
+@keyframes introAnime {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes barre {
+    from{
+        translate: -200px;
+    }
+    
+}
+@keyframes animeNav {
+    from{
+        transform: translateX(-100%);
+    }
+}
+
+@media (width <= 782px){
+    
+    .menu .parfum img, .recipient .item,.menu .parfum .text,.gallerie .item{
+        width: 100%;
+    }
+    .secondPlace{
+        order: 2;
+    }
+    .carousel-item .texte{
+        width: 85%;
+        font-size: 60px;
+    }
+}
+@media (width <= 500px){
+    h1{
+        font-size: 90px;
+    }
+    .introduction h1{
+        font-size: 6rem;
+    }
+}
+@media (width <= 700px){
+    nav{
+        position: relative;
+        width: 100%;
+        z-index: 3000;
+    }
+    .list{
+        display: none;
+        background: #000000;
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        text-align: left;
+        position: absolute;
+        top: 100%;
+        z-index: 2000 ;
+        height: auto;
+        animation: animeNav 1s;
+    }
+    .list a{
+        color: #e5e9e2;
+    }
+}
+@media (width > 700px){
+    #btn_header{
+        display: none;
+    }
+    .list{
+        flex-direction: row;
+        column-gap: 20px;
+        width: auto;
+    }
+}
+
+.show_list{
+    display: flex;
+    
+}
